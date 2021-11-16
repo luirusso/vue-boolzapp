@@ -32,14 +32,16 @@ body {
 }
 
 .user-header {
+    width: 34%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
     border: 1px solid #E2E2E2;
 }
 
 .user-header .avatar {
-    width: 10%;
+    width: 45px;
 }
 
 .user-header .contacts-menu {
@@ -52,7 +54,7 @@ body {
 
 .user-header i {
     font-size: 22px;
-    padding: 0 8px;
+    padding: 0 10px;
     cursor: pointer;
 }
 
@@ -62,12 +64,15 @@ body {
 }
 
 .message-menu .message.avatar {
-    width: 10%;
+    width: 45px;
 }
 
 .message-header {
     display: flex;
     border: 1px solid #E2E2E2;
+    justify-content: space-between;
+    flex-grow: 2;
+    padding: 1rem;
 }
 
 .message-menu {
@@ -83,4 +88,59 @@ body {
 .conversation-menu {
     display: flex;
     align-items: center;
+    color: #BABABA;
+}
+
+.conversation-menu i {
+    font-size: 22px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.message-info {
+    padding-left: 1rem;
+}
+
+.message-name {
+    padding: 5px 0;
+}
+
+.message-header .last-seen {
+    color: #798083;
+    font-size: 14px;
+}
+
+.notification-sidebar {
+    display: flex;
+    align-items: center;
+    background-color: #A2DFFE;
+    width: 34%;
+    height: 80px;
+    padding: 1rem;
+}
+
+.notification-sidebar .notification-bell-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+.notification-sidebar .notification-bell-icon i {
+    color: #A2DFFE;
+    font-size: 21px;
+}
+
+.notification-sidebar .notification-text {
+    padding: 0 1rem;
+}
+
+.notification-sidebar .notification-desktop {
+    padding: 5px 0;
+    color: #5E7F91;
+    font-size: 14px;
+    text-decoration: underline;
 }

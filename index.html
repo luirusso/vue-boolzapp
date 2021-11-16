@@ -19,37 +19,63 @@
 <body>
 
     <div id="app" class="container">
+        <!-- APP HEADER -->
         <div class="app-header">
             <!-- left -->
-        <div class="user-header">
-            <div class="user-menu">
-                <img class="user round avatar" src="./img/avatar_io.jpg" alt="User">
-                <span>
-                    <strong>Nome Utente</strong>
-                </span>
+            <div class="user-header">
+                <div class="user-menu">
+                    <img class="user round avatar" src="./img/avatar_io.jpg" alt="User">
+                    <span>
+                        <strong>Nome Utente</strong>
+                    </span>
+                </div>
+
+                <div class="contacts-menu">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
             </div>
 
-            <div class="contacts-menu">
-                <i class="fas fa-circle-notch"></i>
-                <i class="fas fa-comment-alt"></i>
-                <i class="fas fa-ellipsis-v"></i>
-            </div>
+            <!-- right -->
+            <div class="message-header">
+                <div class="message-menu">
+                    <img class="message round avatar" src="./img/avatar_1.jpg" alt="">
+                    <div class="message-info">
+                        <div class="message-name">
+                            <strong>Michele</strong>
+                        </div>
+                        <div class="last-seen">
+                            Ultimo accesso oggi alle 10:35
+                        </div>
+                    </div>
+                </div>
 
+                <div class="conversation-menu">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
         </div>
 
-        <!-- right -->
-        <div class="message-header">
-            <div class="message-menu">
-                <img class="message round avatar" src="./img/avatar_1.jpg" alt="">
+        <!-- LEFT APP CONTENT -->
+        <div class="sidebar">
+            <div class="notification-sidebar">
+                <div class="notification-bell-icon">
+                    <i class="fas fa-bell-slash"></i>
+                </div>
+                <div class="notification-text">
+                    <span>
+                        <strong>Ricevi notifiche di nuovi messaggi</strong>
+                    </span>
+                    <div class="notification-desktop">
+                        Attiva notifiche desktop
+                    </div>
+                </div>
             </div>
 
-            <div class="conversation-menu">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-paperclip"></i>
-                <i class="fas fa-ellipsis-v"></i>
-
-            </div>
-        </div>
+            
         </div>
 
     </div>
