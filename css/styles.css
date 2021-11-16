@@ -25,3 +25,62 @@ body {
     height: 95%;
     background-color: #fff;
 }
+
+.app-header {
+    display: flex;
+    background-color: #EDEDED;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #E2E2E2;
+}
+
+.user-header .avatar {
+    width: 10%;
+}
+
+.user-header .contacts-menu {
+    color: #BABABA;
+}
+
+.avatar.round {
+    border-radius: 50%;
+}
+
+.user-header i {
+    font-size: 22px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.message-menu .message.avatar {
+    width: 10%;
+}
+
+.message-header {
+    display: flex;
+    border: 1px solid #E2E2E2;
+}
+
+.message-menu {
+    display: flex;
+    align-items: center;
+}
+
+.message-menu .last-seen {
+    display: flex;
+    flex-direction: column;
+}
+
+.conversation-menu {
+    display: flex;
+    align-items: center;
+}
