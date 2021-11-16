@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -114,7 +115,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #A2DFFE;
-    width: 34%;
+    /* width: 34%; */
     height: 80px;
     padding: 1rem;
 }
@@ -145,9 +146,15 @@ body {
     text-decoration: underline;
 }
 
+.sidebar {
+    width: 34%;
+    border: 1px solid #E2E2E2;
+    height: 100vh;
+}
+
 .sidebar .search-contact {
     background-color: #FBFBFB;
-    width: 34%;
+    /* width: 34%; */
     display: flex;
     padding: 3px 7px;
     height: 50px;
@@ -181,7 +188,7 @@ body {
 }
 
 .contacts-container {
-    width: 34%;
+    /* width: 34%; */
 }
 
 .contacts-list {
