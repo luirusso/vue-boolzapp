@@ -120,7 +120,7 @@
                     :class="{sent: message.status === 'sent'}" 
                     class="message"
                     >
-                        <div>
+                        <div class="message-text">
                             {{ message.text }}
                         </div>
                         <div class="sent-message-time">
@@ -134,7 +134,13 @@
                         <i class="far fa-smile"></i>
                     </div>
                     <div class="message-user">
-                        <input type="text" placeholder="Scrivi un messaggio" id="">
+                        <input 
+                        type="text" 
+                        placeholder="Scrivi un messaggio"
+                        v-model.trim="newMessage"
+                        @keyup.enter="addMessage"
+                        ref="messageInput"
+                        >
                     </div>
                     <div class="audio">
                         <i class="fas fa-microphone"></i>
@@ -144,6 +150,8 @@
         </div>
     </div>
 
+    <!-- DAY JS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
     <!-- JS -->
     <script src="js/index.js"></script>
 </body>

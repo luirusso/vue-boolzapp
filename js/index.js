@@ -95,10 +95,39 @@ const app = new Vue({
             },
         ],
         activeContact: 0,
+        newMessage: '',
     },
     methods: {
         contactClick(contactIndex) {
             this.activeContact = contactIndex;
+        },
+
+        /**
+         * Adding new messages
+         */
+         addMessage() {
+            if(this.newMessage !== '') {
+
+                this.contacts[this.activeContact].messages.push(
+                    {
+                    text: this.newMessage,
+                    status: 'sent',
+                    date: this.getDate(),
+                }
+                );
+
+                this.newMessage = '';
+
+                this.$refs.messageInput.focus();
+            }
+        },
+
+        /**
+         * Getting current date and time 
+         */
+        getDate() {
+            const now = dayjs().format('MM/DD/YYYY hh/mm/ss');
+            return now;
         }
     }
 });

@@ -236,14 +236,17 @@ body {
 }
 
 .messages-wrapper .message {
-    height: 60px;
     width: 330px;
     background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 10px;
     margin-bottom: 2rem;
+}
+
+.messages .message-text {
+    margin-bottom: 5px;
 }
 
 .messages-wrapper .message .received-message-time,
