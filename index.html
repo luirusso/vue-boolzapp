@@ -86,7 +86,7 @@
             <div class="contacts-container">
                 <div class="contacts-list">
                     <div v-for="contact in contacts" class="contact">
-                        <img class="contact-image" :src="`img/avatar${contact.avatar}.jpg`" alt="">
+                        <img class="contact-image" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <span class="contact-name">
                             <strong>{{ contact.name }}</strong>
                         </span>
