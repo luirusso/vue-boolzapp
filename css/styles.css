@@ -27,6 +27,7 @@ body {
     height: 95%;
     background-color: #fff;
     display: flex;
+    box-shadow: 0 0px 20px -10px;
 }
 
 /* LEFT MENU SECTION */
@@ -247,6 +248,7 @@ body {
     flex-direction: column;
     padding: 10px;
     margin-bottom: 2rem;
+    box-shadow: 0px 0px 20px -10px;
 }
 
 .messages .message-text {
