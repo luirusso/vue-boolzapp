@@ -93,7 +93,12 @@ const app = new Vue({
                     }
                 ],
             },
-        ]
-        
+        ],
+        activeContact: 0,
+    },
+    methods: {
+        contactClick(contactIndex) {
+            this.activeContact = contactIndex;
+        }
     }
 });

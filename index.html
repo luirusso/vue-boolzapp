@@ -22,7 +22,7 @@
 
         <!-- LEFT APP CONTENT -->
         <div class="sidebar">
-            <div class="app-header">
+            <div class="left-header">
                 <!-- left -->
                 <div class="user-header">
                     <div class="user-menu">
@@ -63,7 +63,10 @@
 
             <div class="contacts-container">
                 <div class="contacts-list">
-                    <div v-for="contact in contacts" class="contact">
+                    <div v-for="(contact, index) in contacts" 
+                    class="contact"
+                    :class="{active: index === activeContact}"
+                    @click="contactClick(index)">
                         <img class="contact-image" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <span class="contact-name">
                             <strong>{{ contact.name }}</strong>
@@ -97,7 +100,7 @@
 
             <div class="messages-wrapper">
                 <div class="messages">
-                    <div class="sent message">
+                    <!-- <div class="sent message">
                         <div>
                             Messaggio inviato
                         </div>
@@ -105,14 +108,26 @@
                             10/01/2021 15:00:00
                         </div>
                     </div>
-                    <div class="received message">
+                    <div v-for="" class="received message">
                         <div>
                             Messaggio ricevuto
                         </div>
                         <div class="received-message-time">
                             10/01/2021 15:00:00
                         </div>
+                    </div> -->
+                    <div v-for="message in contacts[activeContact].messages" 
+                    :class="{sent: message.status === 'sent'}" 
+                    class="message"
+                    >
+                        <div>
+                            {{ message.text }}
+                        </div>
+                        <div class="sent-message-time">
+                            {{ message.date }}
+                        </div>
                     </div>
+
                 </div>
                 <div class="app-footer">
                     <div class="emojis">

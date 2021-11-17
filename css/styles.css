@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +29,9 @@ body {
     display: flex;
 }
 
-.app-header {
-    /* display: flex; */
+/* LEFT MENU SECTION */
+
+.left-header {
     background-color: #EDEDED;
 }
 
@@ -62,121 +65,6 @@ body {
 .user-menu {
     display: flex;
     align-items: center;
-}
-
-.message-menu .message.avatar {
-    width: 45px;
-}
-
-.message-header {
-    display: flex;
-    border-top: 1px solid #E2E2E2;
-    border-right: 1px solid #E2E2E2;
-    border-bottom: 1px solid #E2E2E2;
-    justify-content: space-between;
-    background-color: #EDEDED;
-    padding: 1rem;
-    height: 70px;
-}
-
-.message-menu {
-    display: flex;
-    align-items: center;
-}
-
-.message-menu .last-seen {
-    display: flex;
-    flex-direction: column;
-    color: #798083;
-    font-size: 14px;
-}
-
-.conversation-menu {
-    display: flex;
-    align-items: center;
-    color: #BABABA;
-}
-
-.conversation-menu i {
-    font-size: 22px;
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.message-info {
-    padding-left: 1rem;
-}
-
-.message-name {
-    padding: 5px 0;
-}
-
-.messages-wrapper {
-    height: calc( 100% - 70px );
-    display: flex;
-    flex-direction: column;
-    background-image: url(../img/mine.jpg);
-}
-
-.messages-wrapper .messages {
-    flex-grow: 1;
-    padding: 3rem 6rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.messages-wrapper .message {
-    height: 60px;
-    width: 330px;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.messages-wrapper .message .received-message-time,
-.messages-wrapper .message .sent-message-time {
-    align-self: flex-end;
-    color: #BEC1C3;
-    font-size: 10px;
-}
-
-.messages-wrapper .message.sent {
-    align-self: flex-end;
-    background-color: #DDFABF;
-}
-
-.app-footer {
-    display: flex;
-    background-color: #F4F0ED;
-    height: 70px;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 2rem;
-}
-
-.app-footer .message-user {
-    flex-grow: 1;
-    padding: 0 2rem;
-}
-
-.app-footer .message-user input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    padding-left: 1rem;
-}
-
-.app-footer .message-user input::placeholder {
-    color: #BBBBBB;
-}
-
-.app-footer .emojis,
-.app-footer .audio {
-    font-size: 22px;
-    color: #777E81;
 }
 
 .notification-sidebar {
@@ -280,6 +168,127 @@ body {
     cursor: pointer;
 }
 
+/* RIGHT CONTENT SECTION */
+
 .message-window {
     flex-grow: 1;
+}
+
+.message-menu .message.avatar {
+    width: 45px;
+}
+
+.message-header {
+    display: flex;
+    border-top: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    justify-content: space-between;
+    background-color: #EDEDED;
+    padding: 1rem;
+    height: 70px;
+}
+
+.message-menu {
+    display: flex;
+    align-items: center;
+}
+
+.message-menu .last-seen {
+    display: flex;
+    flex-direction: column;
+    color: #798083;
+    font-size: 14px;
+}
+
+.conversation-menu {
+    display: flex;
+    align-items: center;
+    color: #BABABA;
+}
+
+.conversation-menu i {
+    font-size: 22px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.message-info {
+    padding-left: 1rem;
+}
+
+.message-name {
+    padding: 5px 0;
+}
+
+.messages-wrapper {
+    height: calc( 100% - 70px );
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/mine.jpg);
+}
+
+.messages-wrapper .messages {
+    flex-grow: 1;
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-wrapper .message {
+    height: 60px;
+    width: 330px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.messages-wrapper .message .received-message-time,
+.messages-wrapper .message .sent-message-time {
+    align-self: flex-end;
+    color: #BEC1C3;
+    font-size: 10px;
+}
+
+.messages-wrapper .message.sent {
+    align-self: flex-end;
+    background-color: #DDFABF;
+}
+
+/* APP FOOTER SECTION */
+
+.app-footer {
+    display: flex;
+    background-color: #F4F0ED;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 2rem;
+}
+
+.app-footer .message-user {
+    flex-grow: 1;
+    padding: 0 2rem;
+}
+
+.app-footer .message-user input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.app-footer .message-user input::placeholder {
+    color: #BBBBBB;
+}
+
+.app-footer .emojis,
+.app-footer .audio {
+    font-size: 22px;
+    color: #777E81;
+    cursor: pointer;
 }
