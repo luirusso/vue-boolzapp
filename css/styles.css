@@ -293,6 +293,10 @@ body {
     color: #BBBBBB;
 }
 
+.app-footer .message-user input:focus {
+    outline: 2px solid rgb(50, 160, 147);
+}
+
 .app-footer .emojis,
 .app-footer .audio {
     font-size: 22px;
