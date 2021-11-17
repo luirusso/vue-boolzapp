@@ -147,6 +147,38 @@ body {
     background-color: #DDFABF;
 }
 
+.app-footer {
+    display: flex;
+    background-color: #F4F0ED;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 2rem;
+}
+
+.app-footer .message-user {
+    flex-grow: 1;
+    padding: 0 2rem;
+}
+
+.app-footer .message-user input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.app-footer .message-user input::placeholder {
+    color: #BBBBBB;
+}
+
+.app-footer .emojis,
+.app-footer .audio {
+    font-size: 22px;
+    color: #777E81;
+}
+
 .notification-sidebar {
     display: flex;
     align-items: center;
@@ -246,4 +278,8 @@ body {
 .contacts-container .contact:hover {
     background-color: #EDEDED;
     cursor: pointer;
+}
+
+.message-window {
+    flex-grow: 1;
 }
