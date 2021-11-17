@@ -100,22 +100,6 @@
 
             <div class="messages-wrapper">
                 <div class="messages">
-                    <!-- <div class="sent message">
-                        <div>
-                            Messaggio inviato
-                        </div>
-                        <div class="sent-message-time">
-                            10/01/2021 15:00:00
-                        </div>
-                    </div>
-                    <div v-for="" class="received message">
-                        <div>
-                            Messaggio ricevuto
-                        </div>
-                        <div class="received-message-time">
-                            10/01/2021 15:00:00
-                        </div>
-                    </div> -->
                     <div 
                     v-for="message in contacts[activeContact].messages" 
                     :class="{sent: message.status === 'sent'}" 
