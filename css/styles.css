@@ -168,6 +168,9 @@ body {
     cursor: pointer;
 }
 
+.contacts-list .active {
+    background-color: #EDEDED;
+}
 /* RIGHT CONTENT SECTION */
 
 .message-window {
@@ -233,6 +236,7 @@ body {
     padding: 3rem 6rem;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .messages-wrapper .message {

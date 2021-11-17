@@ -118,8 +118,25 @@ const app = new Vue({
 
                 this.newMessage = '';
 
+                this.botAnswer();
+
                 this.$refs.messageInput.focus();
             }
+        },
+
+        /**
+         * Generate automated response after sending a message
+         */
+        botAnswer() {
+            setTimeout(() => {
+                this.contacts[this.activeContact].messages.push(
+                    {
+                        text: 'ok!',
+                        status: 'received',
+                        date: this.getDate(),
+                    }
+                )
+            }, 1000);
         },
 
         /**
@@ -128,6 +145,6 @@ const app = new Vue({
         getDate() {
             const now = dayjs().format('MM/DD/YYYY hh/mm/ss');
             return now;
-        }
+        },
     }
 });
