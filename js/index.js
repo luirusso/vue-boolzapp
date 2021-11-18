@@ -98,11 +98,7 @@ const app = new Vue({
         newMessage: '',
         newSearch: '',
     },
-    computed: {
-        searchResult() {
 
-        }
-    },
     methods: {
         /**
          * Sets active contact when clicking on one
@@ -157,7 +153,7 @@ const app = new Vue({
         },
 
         /**
-         * Search input
+         * Search function
          */
         inputSearch() {
             this.contacts.forEach( (contact) => {
