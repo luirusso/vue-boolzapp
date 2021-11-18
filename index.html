@@ -62,16 +62,20 @@
                 type="text" 
                 placeholder="Cerca e inizia una nuova chat"
                 ref="searchInput"
+                v-model="newSearch"
+                @keyup="inputSearch"
                 >
             </div>
 
             <div class="contacts-container">
                 <div class="contacts-list">
-                    <div v-for="(contact, index) in contacts" 
+                    <div 
+                    v-for="(contact, index) in contacts" 
                     class="contact"
                     :class="{active: index === activeContact}"
-                    
-                    @click="contactClick(index)">
+                    @click="contactClick(index)"
+                    v-if="contact.visible"
+                    >
                         <img class="contact-image" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <span class="contact-name">
                             <strong>{{ contact.name }}</strong>

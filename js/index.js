@@ -99,7 +99,9 @@ const app = new Vue({
         newSearch: '',
     },
     computed: {
+        searchResult() {
 
+        }
     },
     methods: {
         /**
@@ -152,6 +154,19 @@ const app = new Vue({
         getDate() {
             const now = dayjs().format('MM/DD/YYYY hh:mm:ss');
             return now;
+        },
+
+        /**
+         * Search input
+         */
+        inputSearch() {
+            this.contacts.forEach( (contact) => {
+                if (!contact.name.toLowerCase().includes(this.newSearch.toLowerCase())) {
+                    contact.visible = false;
+                } else {
+                    contact.visible = true;
+                }
+            });
         },
     }
 });
