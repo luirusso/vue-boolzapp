@@ -114,13 +114,8 @@
                     :class="{sent: message.status === 'sent'}" 
                     class="message"
                     >
-                        <div class="message-text-menu">
-                            <div class="message-text">
-                                {{ message.text }}
-                            </div>
-                            <span class="dropdown-menu">
-                                <i class="fas fa-chevron-down"></i>
-                            </span>
+                        <div class="message-text">
+                            {{ message.text }}
                         </div>
                         <div class="sent-message-time">
                             {{ message.date }}

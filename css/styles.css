@@ -262,12 +262,6 @@ body {
     margin-bottom: 5px;
 }
 
-.messages .message-text-menu {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-}
-
 .messages-wrapper .message .received-message-time,
 .messages-wrapper .message .sent-message-time {
     align-self: flex-end;
