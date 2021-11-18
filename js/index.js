@@ -143,7 +143,7 @@ const app = new Vue({
          * Getting current date and time 
          */
         getDate() {
-            const now = dayjs().format('MM/DD/YYYY hh/mm/ss');
+            const now = dayjs().format('MM/DD/YYYY hh:mm:ss');
             return now;
         },
     }
