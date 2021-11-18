@@ -96,8 +96,15 @@ const app = new Vue({
         ],
         activeContact: 0,
         newMessage: '',
+        newSearch: '',
+    },
+    computed: {
+
     },
     methods: {
+        /**
+         * Sets active contact when clicking on one
+         */
         contactClick(contactIndex) {
             this.activeContact = contactIndex;
         },
@@ -131,7 +138,7 @@ const app = new Vue({
             setTimeout(() => {
                 this.contacts[this.activeContact].messages.push(
                     {
-                        text: 'ok!',
+                        text: 'Ok!',
                         status: 'received',
                         date: this.getDate(),
                     }

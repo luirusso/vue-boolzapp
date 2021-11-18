@@ -133,6 +133,10 @@ body {
     color: #D4D6D7;
 }
 
+.sidebar .search-contact input:focus {
+    outline: 2px solid rgb(50, 160, 147);
+}
+
 .sidebar .search-icon {
     display: flex;
     align-items: center;
